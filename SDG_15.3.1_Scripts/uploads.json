@@ -1,0 +1,1527 @@
+{
+    "help": {
+        "_comment_": "This is only a sample file showing how the contents should be structured",
+        "defaults": "This key contains values that are repeated against rasters. If a specific raster has a separate value from the default, specify that value at the raster object level",
+        "raster_category": "Must be one of ['NDVI', 'LULC', 'SOC', 'Rainfall', 'Aspect', 'Forest Loss', 'SAVI', 'MSAVI', 'Evapotranspiration', 'Ecological Units', 'Soil Slope', 'Soil Group', 'Soil Drainage', 'Soil Parent Material', 'Soil Texture', 'Soil Rock Fragments', 'Population Density', 'Land Use Density', 'Fire Risk', 'Erosion Protection', 'Drought Resistance', 'Plant Cover', 'Aridity Index', 'Tree Cover Loss', 'Forest Activity Map', 'Vegetation Cover', 'Soil Roughness', 'Soil Crust', 'Erodible Fraction', 'Climatic Erosivity', 'Rainfall Erosivity', 'Soil Erodibility', 'Slope Steepness', 'Cover Management', 'Conservation Practices', 'Geomorphology', 'Coastal Slope', 'Sea Level Change', 'Shoreline Erosion/Accretion', 'Tide Range', 'Wave Height']",
+        "raster_source": "Must be one of ['LULC', 'Modis', 'Landsat 7', 'Landsat 8', 'Hansen', 'Sentinel 2']",
+        "admin_zero_id": "Only set if the raster is for specific admin_level_zero. Valid values are: [1, 2, 3, 5, 6, 7, 9] for [Tunisia, Algeria, Libya, Morocco, Western Sahara, Mauritania, Egypt] respectively. This will change depending on the existing values. So pick the correct values from the existing data",
+        "raster_file": "You must enter a fully qualified name e.g /home/nyaga/datasets/ndvi.tiff. For Docker setup, ensure the datasets are copied into the shared volumes else they will not be available within the container"
+    },
+    "defaults": {
+        "resolution": 30
+    },
+    "rasters": [
+        {
+            "name": "Morocco NDVI 2000",
+            "raster_year": 2000,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2001",
+            "raster_year": 2001,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2002",
+            "raster_year": 2002,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2003",
+            "raster_year": 2003,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2004",
+            "raster_year": 2004,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2005",
+            "raster_year": 2005,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2006",
+            "raster_year": 2006,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2007",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2008",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2009",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2010",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2011",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2012",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2013",
+            "raster_year": 2013,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2014",
+            "raster_year": 2014,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2015",
+            "raster_year": 2015,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2016",
+            "raster_year": 2016,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2017",
+            "raster_year": 2017,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2018",
+            "raster_year": 2018,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2019",
+            "raster_year": 2019,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco NDVI 2020",
+            "raster_year": 2020,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/Morocco/Morocco_NDVI_2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Mauritania NDVI 2000",
+            "raster_year": 2000,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2001",
+            "raster_year": 2001,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2002",
+            "raster_year": 2002,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2003",
+            "raster_year": 2003,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2004",
+            "raster_year": 2004,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2005",
+            "raster_year": 2005,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2006",
+            "raster_year": 2006,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2007",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2008",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2009",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2010",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2011",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2012",
+            "raster_year": 2012,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2013",
+            "raster_year": 2013,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2014",
+            "raster_year": 2014,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2015",
+            "raster_year": 2015,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2016",
+            "raster_year": 2016,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2017",
+            "raster_year": 2017,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2018",
+            "raster_year": 2018,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2019",
+            "raster_year": 2019,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania NDVI 2020",
+            "raster_year": 2020,
+            "raster_category": "NDVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/NDVI_mauritania/Mauritania_NDVI_2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Tunisia MSAVI 2000",
+            "raster_year": 2000,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2001",
+            "raster_year": 2001,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2002",
+            "raster_year": 2002,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2003",
+            "raster_year": 2003,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2004",
+            "raster_year": 2004,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2005",
+            "raster_year": 2005,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2006",
+            "raster_year": 2006,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2007",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2008",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2009",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2010",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2011",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2012",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2013",
+            "raster_year": 2013,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2014",
+            "raster_year": 2014,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2015",
+            "raster_year": 2015,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2016",
+            "raster_year": 2016,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2017",
+            "raster_year": 2017,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2018",
+            "raster_year": 2018,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2019",
+            "raster_year": 2019,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Tunisia MSAVI 2020",
+            "raster_year": 2020,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Tunisia/Tunisia_MSAVI_median_2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 1
+        },
+        {
+            "name": "Algeria MSAVI 2000",
+            "raster_year": 2000,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2001",
+            "raster_year": 2001,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2002",
+            "raster_year": 2002,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2003",
+            "raster_year": 2003,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2004",
+            "raster_year": 2004,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2005",
+            "raster_year": 2005,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2006",
+            "raster_year": 2006,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2007",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2008",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2009",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2010",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2011",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2012",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2013",
+            "raster_year": 2013,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2014",
+            "raster_year": 2014,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2015",
+            "raster_year": 2015,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2016",
+            "raster_year": 2016,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2017",
+            "raster_year": 2017,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2018",
+            "raster_year": 2018,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2019",
+            "raster_year": 2019,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Algeria MSAVI 2020",
+            "raster_year": 2020,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Algeria/Algeria_Msavi2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 2
+        },
+        {
+            "name": "Mauritania MSAVI 2000",
+            "raster_year": 2000,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2001",
+            "raster_year": 2001,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2002",
+            "raster_year": 2002,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2003",
+            "raster_year": 2003,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2004",
+            "raster_year": 2004,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2005",
+            "raster_year": 2005,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2006",
+            "raster_year": 2006,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2007",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2008",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2009",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2010",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2011",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2012",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2013",
+            "raster_year": 2013,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2014",
+            "raster_year": 2014,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2015",
+            "raster_year": 2015,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2016",
+            "raster_year": 2016,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2017",
+            "raster_year": 2017,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2018",
+            "raster_year": 2018,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2019",
+            "raster_year": 2019,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Mauritania MSAVI 2020",
+            "raster_year": 2020,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Mauritania/Mauritania_Msavi2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 7
+        },
+        {
+            "name": "Egypt MSAVI 2000",
+            "raster_year": 2000,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2001",
+            "raster_year": 2001,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2002",
+            "raster_year": 2002,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2003",
+            "raster_year": 2003,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2004",
+            "raster_year": 2004,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2005",
+            "raster_year": 2005,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2006",
+            "raster_year": 2006,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2007",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2008",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2009",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2010",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2011",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2012",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2013",
+            "raster_year": 2013,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2014",
+            "raster_year": 2014,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2015",
+            "raster_year": 2015,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2016",
+            "raster_year": 2016,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2017",
+            "raster_year": 2017,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2018",
+            "raster_year": 2018,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2019",
+            "raster_year": 2019,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Egypt MSAVI 2020",
+            "raster_year": 2020,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Egypt/Egypt_2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 9
+        },
+        {
+            "name": "Morocco MSAVI 2000",
+            "raster_year": 2000,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2001",
+            "raster_year": 2001,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2002",
+            "raster_year": 2002,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2003",
+            "raster_year": 2003,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2004",
+            "raster_year": 2004,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2005",
+            "raster_year": 2005,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2006",
+            "raster_year": 2006,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2007",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2008",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2009",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2010",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2011",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2012",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2013",
+            "raster_year": 2013,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2014",
+            "raster_year": 2014,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2015",
+            "raster_year": 2015,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2016",
+            "raster_year": 2016,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2017",
+            "raster_year": 2017,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2018",
+            "raster_year": 2018,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2019",
+            "raster_year": 2019,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Morocco MSAVI 2020",
+            "raster_year": 2020,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Morocco/Morocco_Msavi2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 5
+        },
+        {
+            "name": "Libya MSAVI 2000",
+            "raster_year": 2000,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2000.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2001",
+            "raster_year": 2001,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2001.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2002",
+            "raster_year": 2002,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2002.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2003",
+            "raster_year": 2003,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2003.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2004",
+            "raster_year": 2004,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2004.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2005",
+            "raster_year": 2005,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2005.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2006",
+            "raster_year": 2006,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2006.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2007",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2007.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2008",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2008.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2009",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2009.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2010",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2010.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2011",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2011.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2012",
+            "raster_year": 2012,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2012.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2013",
+            "raster_year": 2013,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2013.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2014",
+            "raster_year": 2014,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2014.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2015",
+            "raster_year": 2015,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2015.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2016",
+            "raster_year": 2016,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2016.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2017",
+            "raster_year": 2017,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2017.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2018",
+            "raster_year": 2018,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2018.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2019",
+            "raster_year": 2019,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2019.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        },
+        {
+            "name": "Libya MSAVI 2020",
+            "raster_year": 2020,
+            "raster_category": "MSAVI",
+            "raster_source": "Landsat 8",
+            "file_path": "/home/app/web/media/datasets/MSAVI/Libya/Libya_Msavi2020.tif",
+            "resolution": 30,
+            "admin_zero_id": 3
+        }  
+    ] 
+}
